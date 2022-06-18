@@ -1,11 +1,13 @@
 package hr.tvz.android.slovicprojekt.fragments
 
+import android.net.Uri
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.facebook.drawee.backends.pipeline.Fresco
+import com.facebook.drawee.view.SimpleDraweeView
 import hr.tvz.android.slovicprojekt.databinding.FragmentItemDetailBinding
 import hr.tvz.android.slovicprojekt.R
 import hr.tvz.android.slovicprojekt.model.Animal
@@ -36,14 +38,10 @@ class ItemDetailFragment : Fragment(R.layout.fragment_item_detail) {
             binding.familyContent.text = animal!!.family
             binding.lifetimeContent.text = animal!!.lifetime
             binding.weightContent.text = animal!!.weight
-//            binding.nationalityContent.text = animal!!.country
-//            binding.currentClubContent.text = animal!!.club
 
-//            val playerName = animal!!.name
-
-//            val imgUri = Uri.parse(animal!!.img)
-//            val draweeView = binding.playerImage as SimpleDraweeView
-//            draweeView.setImageURI(imgUri)
+            val imgUri = Uri.parse(animal!!.img)
+            val draweeView = binding.animalImage as SimpleDraweeView
+            draweeView.setImageURI(imgUri)
 
 //            binding.buttonLink.setOnClickListener {
 //                val url = "https://www.google.com/search?q=${animal!!.name}"

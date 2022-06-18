@@ -25,10 +25,11 @@ class DatabaseHelper(context: Context) : SQLiteOpenHelper(
         const val KEY_FAMILY = "family"
         const val KEY_LIFETIME = "lifetime"
         const val KEY_WEIGHT = "weight"
+        const val KEY_IMG = "img"
 
         const val CREATE_TABLE_TODO = ("CREATE TABLE "
                 + TABLE_ANIMALS + "(" + KEY_ID + " INTEGER PRIMARY KEY," + KEY_NAME
-                + " TEXT," + KEY_FAMILY + " TEXT," + KEY_LIFETIME + " TEXT," + KEY_WEIGHT + " TEXT" + ")")
+                + " TEXT," + KEY_FAMILY + " TEXT," + KEY_LIFETIME + " TEXT," + KEY_WEIGHT + " TEXT," + KEY_IMG + " TEXT" + ")")
     }
 
     // TODO: Čemu ovo služi Patrik?
@@ -59,7 +60,8 @@ class DatabaseHelper(context: Context) : SQLiteOpenHelper(
                     c.getString(c.getColumnIndex(KEY_NAME)),
                     c.getString(c.getColumnIndex(KEY_FAMILY)),
                     c.getString(c.getColumnIndex(KEY_LIFETIME)),
-                    c.getString(c.getColumnIndex(KEY_WEIGHT))
+                    c.getString(c.getColumnIndex(KEY_WEIGHT)),
+                    c.getString(c.getColumnIndex(KEY_IMG))
                 )
 
                 animals.add(td)
@@ -80,7 +82,8 @@ class DatabaseHelper(context: Context) : SQLiteOpenHelper(
             c.getString(c.getColumnIndex(KEY_NAME)),
             c.getString(c.getColumnIndex(KEY_FAMILY)),
             c.getString(c.getColumnIndex(KEY_LIFETIME)),
-            c.getString(c.getColumnIndex(KEY_WEIGHT))
+            c.getString(c.getColumnIndex(KEY_WEIGHT)),
+            c.getString(c.getColumnIndex(KEY_IMG))
         )
         return td
     }
@@ -93,6 +96,7 @@ class DatabaseHelper(context: Context) : SQLiteOpenHelper(
         values.put(KEY_FAMILY, animal.family)
         values.put(KEY_LIFETIME, animal.lifetime)
         values.put(KEY_WEIGHT, animal.weight)
+        values.put(KEY_IMG, animal.img)
 
         // insert row
         return db.insert(TABLE_ANIMALS, null, values)

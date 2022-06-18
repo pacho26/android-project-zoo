@@ -9,7 +9,8 @@ data class Animal(
     var name: String,
     var family: String,
     var lifetime: String,
-    var weight: String
+    var weight: String,
+    var img: String,
 ) : Parcelable {
 
     override fun toString(): String {
