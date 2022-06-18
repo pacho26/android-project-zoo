@@ -32,8 +32,10 @@ class ItemDetailFragment : Fragment(R.layout.fragment_item_detail) {
         val rootView: View = inflater.inflate(R.layout.fragment_item_detail, container, false)
         val binding = FragmentItemDetailBinding.bind(rootView)
         if (animal != null) {
-//            binding.ageContent.text = animal!!.age.toString()
-            binding.text1.text = animal!!.name
+            binding.nameContent.text = animal!!.name
+            binding.familyContent.text = animal!!.family
+            binding.lifetimeContent.text = animal!!.lifetime
+            binding.weightContent.text = animal!!.weight
 //            binding.nationalityContent.text = animal!!.country
 //            binding.currentClubContent.text = animal!!.club
 

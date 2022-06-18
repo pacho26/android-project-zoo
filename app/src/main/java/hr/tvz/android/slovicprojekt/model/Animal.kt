@@ -7,7 +7,9 @@ import kotlinx.parcelize.Parcelize
 data class Animal(
     var id: Int,
     var name: String,
-    var family: String
+    var family: String,
+    var lifetime: String,
+    var weight: String
 ) : Parcelable {
 
     override fun toString(): String {

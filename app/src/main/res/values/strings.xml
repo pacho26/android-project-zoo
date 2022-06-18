@@ -4,4 +4,10 @@
     <string name="zoo_encyclopedia">Zoo encyclopedia</string>
     <string name="birds">Birds</string>
     <string name="insects">Insects</string>
+    <string name="name">Name</string>
+    <string name="family">Family</string>
+    <string name="learn_more">Learn more</string>
+    <string name="weight">Weight</string>
+    <string name="lifetime">Lifetime</string>
+    <string name="years">years</string>
 </resources>
