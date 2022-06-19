@@ -67,11 +67,11 @@ class DatabaseHelper(context: Context) : SQLiteOpenHelper(
                 animals.add(td)
             } while (c.moveToNext())
         }
-        return animals
+        return animals.sortedBy { it.name }.toMutableList()
     }
 
     @SuppressLint("Range")
-    fun getAnimalById(id: String?): Animal? {
+    fun getAnimalById(id: Int?): Animal? {
         val db = this.readableDatabase
         val selectQuery = ("SELECT  * FROM " + TABLE_ANIMALS + " WHERE "
                 + KEY_ID + " = " + id)
@@ -100,5 +100,12 @@ class DatabaseHelper(context: Context) : SQLiteOpenHelper(
 
         // insert row
         return db.insert(TABLE_ANIMALS, null, values)
+    }
+
+    fun getAnimalCount(): Int {
+        val countQuery = "SELECT  * FROM " + TABLE_ANIMALS
+        val db = this.readableDatabase
+        val c = db.rawQuery(countQuery, null)
+        return c.count
     }
 }

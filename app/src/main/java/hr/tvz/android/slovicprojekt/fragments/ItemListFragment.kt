@@ -42,7 +42,7 @@ class ItemListFragment : ListFragment() {
                 R.id.text1,
                 animalsList
             )
-        }, 2500)
+        }, 3000)
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -88,10 +88,5 @@ class ItemListFragment : ListFragment() {
         if (mActivatedPosition != ListView.INVALID_POSITION) {
             outState.putInt(STATE_ACTIVATED_POSITION, mActivatedPosition)
         }
-    }
-
-    fun setActivateOnItemClick(activateOnItemClick: Boolean) {
-        listView.choiceMode =
-            if (activateOnItemClick) ListView.CHOICE_MODE_SINGLE else ListView.CHOICE_MODE_NONE
     }
 }

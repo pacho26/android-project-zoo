@@ -1,20 +1,29 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    xmlns:fresco="http://schemas.android.com/apk/res-auto">
+    android:layout_height="match_parent">
 
     <com.facebook.drawee.view.SimpleDraweeView
         android:id="@+id/animal_image"
         android:layout_width="match_parent"
         android:layout_height="170dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="64dp"
         app:layout_constraintCircleRadius="10dp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        fresco:actualImageScaleType="fitCenter"
-        />
+        fresco:actualImageScaleType="fitCenter" />
+
+    <Button
+        android:id="@+id/random_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="8dp"
+        android:text="Random animal"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -23,7 +32,6 @@
         android:layout_marginTop="244dp"
         android:orientation="vertical"
         app:layout_constraintTop_toTopOf="@id/animal_image">
-
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -40,6 +48,7 @@
                 android:id="@+id/name_content"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-condensed"
                 android:textSize="24sp"
                 android:textStyle="bold" />
         </LinearLayout>
@@ -60,6 +69,7 @@
                 android:id="@+id/family_content"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-condensed"
                 android:textSize="24sp"
                 android:textStyle="bold" />
         </LinearLayout>
@@ -80,6 +90,7 @@
                 android:id="@+id/weight_content"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-condensed"
                 android:textSize="24sp"
                 android:textStyle="bold" />
         </LinearLayout>
@@ -100,6 +111,7 @@
                 android:id="@+id/lifetime_content"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-condensed"
                 android:textSize="24sp"
                 android:textStyle="bold" />
         </LinearLayout>
@@ -118,6 +130,11 @@
                 android:paddingVertical="16dp"
                 android:text="@string/learn_more" />
         </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="test" />
 
 
     </LinearLayout>
