@@ -1,10 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="zoo_encyclopedia">Zoo Enzyklopädie</string>
+    <string name="zoo_encyclopedia">ZOO Enzyklopädie</string>
     <string name="name">Name</string>
     <string name="family">Familie</string>
     <string name="learn_more">Lern mehr</string>
     <string name="weight">Gewicht</string>
-    <string name="lifetime">Lebensspanne</string>
+    <string name="lifetime_in_years">LEBENDSSPANNE (in Jahren)</string>
     <string name="years">Jahren</string>
+    <string name="random_animal">Zufällig werden</string>
+    <string name="zoo_details">Zoo Einzelheiten</string>
+    <string name="zoo_name">Zoo Zagreb</string>
+    <string name="call_info_center">📞 Infocenter anrufen</string>
+    <string name="reserve_ticket">Ticket reservieren</string>
 </resources>

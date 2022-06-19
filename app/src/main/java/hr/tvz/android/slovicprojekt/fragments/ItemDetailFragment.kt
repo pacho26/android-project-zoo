@@ -9,13 +9,14 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.facebook.drawee.backends.pipeline.Fresco
 import com.facebook.drawee.view.SimpleDraweeView
+import hr.tvz.android.slovicprojekt.ZooDetailsActivity
 import hr.tvz.android.slovicprojekt.databinding.FragmentItemDetailBinding
 import hr.tvz.android.slovicprojekt.R
 import hr.tvz.android.slovicprojekt.database.DatabaseHelper
 import hr.tvz.android.slovicprojekt.model.Animal
 
 class ItemDetailFragment : Fragment(R.layout.fragment_item_detail) {
-    val ARG_ANIMAL = null;
+    val ARG_ANIMAL = null
     val ARG_ITEM_ID = "item_id"
 
     var animal: Animal? = null
@@ -46,7 +47,8 @@ class ItemDetailFragment : Fragment(R.layout.fragment_item_detail) {
             binding.randomButton?.setOnClickListener {
                 val databaseHelper = DatabaseHelper(requireContext())
                 while (true) {
-                    val randomId = Math.floor(Math.random() * databaseHelper.getAnimalCount()).toInt() + 1
+                    val randomId =
+                        Math.floor(Math.random() * databaseHelper.getAnimalCount()).toInt() + 1
                     if (randomId != animal!!.id) {
                         animal = databaseHelper.getAnimalById(randomId)
                         break
@@ -70,6 +72,11 @@ class ItemDetailFragment : Fragment(R.layout.fragment_item_detail) {
                 val url = "https://en.wikipedia.org/wiki/${animal!!.name.replace(" ", "_")}"
                 val intent = Intent(Intent.ACTION_VIEW)
                 intent.data = Uri.parse(url)
+                startActivity(intent)
+            }
+
+            binding.notificationButton?.setOnClickListener {
+                val intent = Intent(requireContext(), ZooDetailsActivity::class.java)
                 startActivity(intent)
             }
         }

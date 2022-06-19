@@ -4,6 +4,11 @@
     <string name="family">Family</string>
     <string name="learn_more">Learn more</string>
     <string name="weight">Weight</string>
-    <string name="lifetime">Lifetime</string>
+    <string name="lifetime_in_years">LIFETIME (in years)</string>
     <string name="years">years</string>
+    <string name="random_animal">Get random</string>
+    <string name="zoo_details">ZOO details</string>
+    <string name="zoo_name">Zagreb Zoo</string>
+    <string name="call_info_center">📞 Call info center</string>
+    <string name="reserve_ticket">🎫 Reserve ticket</string>
 </resources>

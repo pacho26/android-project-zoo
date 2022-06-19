@@ -1,10 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="zoo_encyclopedia">Zoo enciklopedija</string>
+    <string name="zoo_encyclopedia">ZOO enciklopedija</string>
     <string name="name">Naziv</string>
     <string name="family">Porodica</string>
     <string name="learn_more">Saznaj više</string>
     <string name="weight">Težina</string>
-    <string name="lifetime">Životni vijek</string>
+    <string name="lifetime_in_years">ŽIVOTNI VIJEK (u godinama)</string>
     <string name="years">godina</string>
+    <string name="random_animal">Dohvati nasumično</string>
+    <string name="zoo_details">Detalji o ZOO</string>
+    <string name="zoo_name">Zoološki vrt grada Zagreba</string>
+    <string name="call_info_center">📞 Nazovi info centar</string>
+    <string name="reserve_ticket">Rezerviraj kartu</string>
 </resources>

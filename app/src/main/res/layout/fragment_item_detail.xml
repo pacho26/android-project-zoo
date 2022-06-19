@@ -16,20 +16,30 @@
         fresco:actualImageScaleType="fitCenter" />
 
     <Button
+        android:id="@+id/notification_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="4dp"
+        android:text="@string/zoo_details"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
         android:id="@+id/random_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
-        android:layout_marginEnd="8dp"
-        android:text="Random animal"
+        android:layout_marginEnd="20dp"
+        android:text="@string/random_animal"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginHorizontal="24dp"
-        android:layout_marginTop="244dp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="250dp"
         android:orientation="vertical"
         app:layout_constraintTop_toTopOf="@id/animal_image">
 
@@ -104,8 +114,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/lifetime"
-                android:textAllCaps="true" />
+                android:text="@string/lifetime_in_years" />
 
             <TextView
                 android:id="@+id/lifetime_content"
