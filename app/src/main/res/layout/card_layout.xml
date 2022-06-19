@@ -24,6 +24,8 @@
         <TextView
             android:id="@+id/text1"
             style="@style/card_text_style"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="12dp"
             app:layout_constraintLeft_toRightOf="@+id/item_image"
             app:layout_constraintTop_toTopOf="parent" />
     </androidx.constraintlayout.widget.ConstraintLayout>

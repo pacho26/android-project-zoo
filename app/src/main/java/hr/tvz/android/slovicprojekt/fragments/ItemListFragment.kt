@@ -42,7 +42,7 @@ class ItemListFragment : ListFragment() {
                 R.id.text1,
                 animalsList
             )
-        }, 2000)
+        }, 2500)
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {

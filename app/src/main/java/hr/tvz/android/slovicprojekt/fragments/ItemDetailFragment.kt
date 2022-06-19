@@ -18,6 +18,8 @@ class ItemDetailFragment : Fragment(R.layout.fragment_item_detail) {
 
     var animal: Animal? = null
 
+    private lateinit var binding: FragmentItemDetailBinding
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
@@ -32,7 +34,7 @@ class ItemDetailFragment : Fragment(R.layout.fragment_item_detail) {
         savedInstanceState: Bundle?
     ): View? {
         val rootView: View = inflater.inflate(R.layout.fragment_item_detail, container, false)
-        val binding = FragmentItemDetailBinding.bind(rootView)
+        binding = FragmentItemDetailBinding.bind(rootView)
         if (animal != null) {
             binding.nameContent.text = animal!!.name
             binding.familyContent.text = animal!!.family
