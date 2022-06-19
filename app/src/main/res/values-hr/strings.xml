@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="zoo_encyclopedia">Zoo enciklopedija</string>
+    <string name="name">Naziv</string>
+    <string name="family">Porodica</string>
+    <string name="learn_more">Saznaj više</string>
+    <string name="weight">Težina</string>
+    <string name="lifetime">Životni vijek</string>
+    <string name="years">godina</string>
+</resources>

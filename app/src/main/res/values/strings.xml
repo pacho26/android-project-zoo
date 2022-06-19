@@ -1,9 +1,5 @@
 <resources>
-    <string name="app_name">SlovicProjekt</string>
-    <string name="mammals">Mammals</string>
     <string name="zoo_encyclopedia">Zoo Encyclopedia</string>
-    <string name="birds">Birds</string>
-    <string name="insects">Insects</string>
     <string name="name">Name</string>
     <string name="family">Family</string>
     <string name="learn_more">Learn more</string>

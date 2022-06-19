@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="zoo_encyclopedia">Zoo Enzyklopädie</string>
+    <string name="name">Name</string>
+    <string name="family">Familie</string>
+    <string name="learn_more">Lern mehr</string>
+    <string name="weight">Gewicht</string>
+    <string name="lifetime">Lebensspanne</string>
+    <string name="years">Jahren</string>
+</resources>
