@@ -1,0 +1,85 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ZooDetailsActivity">
+
+    <TextView
+        android:id="@+id/zoo_headline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="@string/zoo_name"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="28dp"
+        android:text="The Zagreb Zoo was founded in 1925 and is located in Maksimir Park. It covers 7 hectares, of which 5.5 is the mainland. It is home to 369 species of animals, or 8284 individuals from all continents.\n\nOur activities in the field of animal species protection are visible through the network of activities within the European Association of Zoos and Aquariums, which includes 410 members in 47 countries in Europe and the Middle East."
+        app:layout_constraintTop_toBottomOf="@+id/zoo_headline" />
+
+    <TextView
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="Mon - Fri: 10:00 - 18:00\nSat: 10:00 - 15:00\nSun: 10:00 - 14:00"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/buttons_container"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/buttons_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent">
+
+        <Button
+            android:id="@+id/reserve_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginHorizontal="16dp"
+            android:paddingVertical="16dp"
+            android:scaleX="0.8"
+            android:scaleY="0.8"
+            android:text="@string/reserve_ticket"
+            android:translationX="-16dp" />
+
+        <Button
+            android:id="@+id/call_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginHorizontal="16dp"
+            android:paddingVertical="16dp"
+            android:scaleX="0.8"
+            android:scaleY="0.8"
+            android:text="@string/call_info_center"
+            android:translationX="-64dp" />
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/zoo_image"
+        android:layout_width="280dp"
+        android:layout_height="220dp"
+        android:src="@drawable/zoo_ulaz"
+        android:translationX="-16dp"
+        android:translationY="6dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_editor_absoluteX="0dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
