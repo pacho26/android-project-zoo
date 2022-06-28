@@ -32,7 +32,6 @@ class DatabaseHelper(context: Context) : SQLiteOpenHelper(
                 + " TEXT," + KEY_FAMILY + " TEXT," + KEY_LIFETIME + " TEXT," + KEY_WEIGHT + " TEXT," + KEY_IMG + " TEXT" + ")")
     }
 
-    // TODO: Čemu ovo služi Patrik?
     override fun onCreate(db: SQLiteDatabase?) {
         if (db != null) {
             db.execSQL(CREATE_TABLE_TODO)
